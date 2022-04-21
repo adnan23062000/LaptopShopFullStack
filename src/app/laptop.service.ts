@@ -30,7 +30,6 @@ export class LaptopService {
     {id: 7, name: "Asus Vivobook X515MA ", ram: " 4GB DDR4 RAM", ssd:"1TB 5400RPM HDD",price:"$35500",display:"14 FHD (1920 x 1080) IPS Display",image:"..\\..\\assets\\vivobook.jpg"},
     {id: 8, name: "Lenovo IdeaPad Slim 3i ", ram: "4GB DDR4 RAM", ssd:"256GB SSD",price:"$35800",display:"15.6″ HD (1366×768)",image:"..\\..\\assets\\ideapad.jpg"},
     {id: 9, name: "Lenovo IdeaPad Slim 3i ", ram: " 4GB DDR4 RAM", ssd:"1TB HDD",price:"$34800",display:"15.6″ HD (1366×768)",image:"..\\..\\assets\\ideapadslim.jpg"},
-   
   ];
   constructor() {
    

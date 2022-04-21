@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from './api.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class AppComponent {
 loginbtn:boolean;
 logoutbtn:boolean;
 
-constructor(private dataService: ApiService) {
+constructor(private dataService: ApiService, private route: Router) {
 dataService.getLoggedInName.subscribe(name => this.changeName(name));
 if(this.dataService.isLoggedIn())
 {
@@ -33,6 +34,6 @@ this.loginbtn = !name;
 logout()
 {
 this.dataService.deleteToken();
-window.location.href = window.location.href;
+this.route.navigate(['login']);
 }
 }
